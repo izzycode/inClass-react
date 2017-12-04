@@ -7,7 +7,7 @@ class WeatherApp extends React.Component {
   render() {
     return (
       <main>
-        <Days />
+        <Days cityState={this.props.match.params.weatherId} />
         <DetailedForecast />
       </main>
     )
