@@ -1,0 +1,112 @@
+@import 'colors';
+
+body {
+  padding: 50px 0;
+  min-width: 880px;
+}
+h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 45px;
+}
+h2, h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+h2 {
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+  color: $bkrd-blue;
+}
+h3 {
+  color: $text-lt-gray;
+  font-weight: 500;
+}
+h3, .degrees, .precipitation {
+  color: $text-lt-gray;
+}
+
+.days, .details {
+  background-color: $off-white;
+  width: 75%;
+  max-width: 1060px;
+  margin: 0 auto;
+  border: 1px solid $text-lt-gray;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+.days {
+  border-top: 35px solid $text-default-gray;
+  margin-bottom: 6px;
+}
+.day, .daytime, .nighttime {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 1rem;
+  border-right: 1px solid $text-lt-gray;
+  p {
+    line-height: 1.3rem;
+  }
+}
+.day {
+  width: 20%;
+  height: 290px;
+  overflow: hidden;
+  cursor: pointer;
+  &:last-child {
+    border-right: none;
+  }
+  img {
+    display: block;
+    width: 70%;
+  }
+  .degrees {
+    font-size: 1.3rem;
+    .high {
+      color: $text-default-gray;
+      font-size: 2rem;
+    }
+  }
+  &.selected {
+    background-color: #fff;
+    border-bottom: 5px solid $orange;
+  }
+}
+
+.details {
+  border-top: 5px solid $text-default-gray;
+  background-color: #fff;
+  .daytime, .nighttime {
+    width: 50%;
+  }
+  .day-night-info {
+    font-size: 0;
+  }
+  .left-side, img {
+    width: 50%;
+    vertical-align: top;
+  }
+  .left-side {
+    display: inline-block;
+    font-size: 1rem;
+    .temp {
+      font-size: 2.5rem;
+      margin-top: 10px;
+      position: relative;
+      .label {
+        text-transform: uppercase;
+        color: $text-lt-gray;
+        font-size: .7rem;
+        position: absolute;
+        top: 10px;
+        left: 55px;
+      }
+    }
+    .precipitation {
+      margin-top: 64px;
+    }
+  }
+}
