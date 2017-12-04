@@ -5,10 +5,10 @@ import NightForecast from './NightForecast';
 class DetailedForecast extends React.Component {
   render() {
     return (
-     <div>
-       <DayForecast />
-       <NightForecast />
-     </div>
+      <div className="details">
+        <DayForecast />
+        <NightForecast />
+      </div>
     )
   }
 }

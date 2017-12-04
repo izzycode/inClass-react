@@ -6,10 +6,10 @@ import DetailedForecast from './DetailedForecast';
 class WeatherApp extends React.Component {
   render() {
     return (
-      <div>
+      <main>
         <Days />
         <DetailedForecast />
-      </div>
+      </main>
     )
   }
 }
