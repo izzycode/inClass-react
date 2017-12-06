@@ -2,7 +2,7 @@ Starter files for Wyncode's React curriculum.
 
 The `master` branch contains the starter files you will need to begin with the React lessons. 
 
-The `commits_by_lesson` branch contains the completed application. Each commit in this branch corresponds with the state of the application at the point at of each lesson, and is labeled as such.
+The `commits_by_lesson` branch contains the completed application. Each commit in this branch corresponds with the state of the application at the end of each lesson, and is labeled as such.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

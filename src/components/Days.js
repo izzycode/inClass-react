@@ -6,11 +6,18 @@ class Days extends React.Component {
     const cityData = this.props.data.city;
     return (
       <div>
-        <h1>Weather for {this.props.cityState}</h1>
+        <h1>Weather for { this.props.cityState }</h1>
         <div className="days">
           {
             cityData.map( (day, i) => {
-              return <Day day={ day } key={ i } />
+              return (
+                <Day 
+                  day={ day } 
+                  data={ this.props.data }
+                  updateCurrentDay={ this.props.updateCurrentDay }
+                  key={ i }
+                />
+              )
             })
           }
         </div>

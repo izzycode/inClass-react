@@ -5,8 +5,8 @@ import NightForecast from './NightForecast';
 const DetailedForecast = (props) => {
   return (
     <div className="details">
-      <DayForecast />
-      <NightForecast />
+      <DayForecast currentDay={ props.currentDay } />
+      <NightForecast currentDay={ props.currentDay } />
     </div>
   )
 }
