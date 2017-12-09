@@ -19,3 +19,4 @@ src/**/*.css
 
 npm-debug.log*
 
+.netlify
