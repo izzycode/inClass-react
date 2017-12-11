@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/weather-form.css';
+import PropTypes from 'prop-types';
 
 class WeatherForm extends React.Component { 
   getWeather(event) {
@@ -22,6 +23,12 @@ class WeatherForm extends React.Component {
       </form>
     )
   }
+}
+
+WeatherForm.propTypes = {
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
 }
 
 export default WeatherForm;

@@ -3,6 +3,7 @@ import '../css/weather-app.css';
 import Days from './Days';
 import DetailedForecast from './DetailedForecast';
 import sampleCity from '../sample-city';
+import PropTypes from 'prop-types';
 
 class WeatherApp extends React.Component {
   constructor() {
@@ -36,6 +37,12 @@ class WeatherApp extends React.Component {
       </main>
     )
   }
+}
+
+WeatherApp.propTypes = {
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
 }
 
 export default WeatherApp;

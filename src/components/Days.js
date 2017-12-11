@@ -1,5 +1,6 @@
 import React from 'react';
 import Day from './Day';
+import PropTypes from 'prop-types';
   
 class Days extends React.Component {
   render() {
@@ -24,6 +25,12 @@ class Days extends React.Component {
       </div>
     )
   }
+}
+
+Days.propTypes = {
+  updateCurrentDay: PropTypes.func.isRequired,
+  cityState: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default Days;

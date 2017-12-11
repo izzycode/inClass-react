@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
   
 class DayForecast extends React.Component {
   render() {
@@ -23,5 +24,10 @@ class DayForecast extends React.Component {
     )
   }
 }
+
+DayForecast.propTypes = {
+  currentDay: PropTypes.object.isRequired
+}
+
 
 export default DayForecast;

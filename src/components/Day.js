@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 class Day extends React.Component {
   formatDate(datetime) {
@@ -35,6 +36,19 @@ class Day extends React.Component {
       </div>
     )
   }
+}
+
+Day.propTypes = {
+  updateCurrentDay: PropTypes.func.isRequired,
+  day: PropTypes.shape({
+    day: PropTypes.object.isRequired,
+    description: PropTypes.string.isRequired,
+    dt: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    night: PropTypes.object.isRequired,
+    temp_max: PropTypes.number.isRequired,
+    temp_min: PropTypes.number.isRequired
+  })
 }
 
 export default Day;
